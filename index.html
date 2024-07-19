@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #343a40;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ff69b4 !important;
+        }
+        .about-section, .project-section, .skills-section, .contact-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .about-section img {
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+        .about-text {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .card {
+            margin: 15px;
+        }
+        .contact-section {
+            background-color: #333;
+            color: white;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 30px;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-info i {
+            font-size: 1.5rem;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .social-icons a img {
+            max-width: 60%;
+        }
+        .social-icons a:hover {
+            background-color: #ff4da6;
+        }
+    </style>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" style="height: 35vh; background-color: #bcdcfc; text-align: center; padding-top: 100px;">
+        <h1>Welcome to My Portfolio.</h1>
+        <h1>Discover my projects, inspirations, and insights here.</h1>
+        </section>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h1 class="display-4">About</h1>
+            <img src="images/about/photo.jpg" alt="Profile Image" class="img-fluid my-4">
+            <div class="about-text">
+                <p>Hi, I’m Immaculate Punitha - Data Analyst with a strong background in SQL, Microsoft Power BI, Python, and Excel for data analysis, visualization, and manipulation.</p>
+                <p> Skilled in identifying trends, patterns, and actionable insights to drive informed decision-making processes. Proficient in stakeholder management, collaborating closely to translate business objectives into effective analytics solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="project-section" id="projects">
+        <div class="container">
+            <h1 class="display-4">Projects</h1>
+            <div class = "row">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/central.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Central Tendency- Chemical Analysis</h5>
+                            <p class="card-text">Explore the distribution and central tendency of key chemical properties in the dataset.Analyzed the relationship between these properties</p>
+                            <a href="https://github.com/PunithaDA/CentralTendency" class="btn btn-secondary">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/ecom.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ecommerce Sales Analysis</h5>
+                            <p class="card-text">Conducted ETL process on Amazon sales dataset to prepare it for analysis.
+                                Analyzed sales data to identify trends on a yearly monthly basis.</p>
+                                <a href="https://github.com/PunithaDA/Ecommerce_SalesAnalysis" class="btn btn-secondary">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/statis.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee Salary Analysis</h5>
+                            <p class="card-text">Analyzed a dataset containing information about employees, including their age, blood group, habits and salary.</p>
+                            <a href="https://github.com/PunithaDA/Descriptive_Statistics" class="btn btn-secondary">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/attri.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee Atrition Analysis</h5>
+                            <p class="card-text">Conducted an in-depth analysis of employee attrition using Power BI to provide actionable insights for HR decision-making.</p>
+                            <a href="https://github.com/PunithaDA/HR_Analytics" class="btn btn-secondary">Github Repo</a>
+                        </div>
+                    </div>
+                </div><div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/credit.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Credit card Analysis</h5>
+                            <p class="card-text">Analyzed customer spending behavior and preferences to guide Bank in tailoring credit card offerings to meet customer needs and market demands.</p>
+                            
+                            <a href="https://github.com/PunithaDA/Credit_card_Analysis" class="btn btn-secondary">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/projects/churn.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Churn Analysis</h5>
+                            <p class="card-text">Developed an interactive Power BI dashboard to analyze customer churn and retention for a telecom company
+            .</p>
+                            
+                            <a href="https://github.com/PunithaDA/Customer-Churn-Analysis" class="btn btn-secondary">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h1 class="display-4">Skills</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/python.png" class="card-img-top" alt="Skill 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/BI.png" class="card-img-top" alt="Skill 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/sql.png" class="card-img-top" alt="Skill 3">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/skills/st.png" class="card-img-top" alt="Skill 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Storytelling</h5>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h1 class="display-4">Contact Me</h1>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>immaculatepunitha1@gmail.com</span>
+                </div>
+                            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/punithaanalyst/" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                    <img src="icons/linkedin.png" alt="LinkedIn">
+                </a>
+                
+                <a href="https://github.com/PunithaDA" data-toggle="tooltip" data-placement="top" title="GitHub">
+                    <img src="icons/github.png" alt="GitHub">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
